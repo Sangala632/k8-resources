@@ -1,0 +1,9 @@
+ApiVersion: v1
+kind: Namespace
+metadata:
+  name: roboshop
+  labels:
+    projec: roboshop
+    environment: dev
+    team: devops
+    
