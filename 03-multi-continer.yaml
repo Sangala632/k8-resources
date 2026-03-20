@@ -10,7 +10,7 @@ spec:
   - name: nginx
     image: nginx
     
-  - name: almalinux:9
+  - name: almalinux
     image: almalinux:9
     #command: ["sleep","2000"]
 
