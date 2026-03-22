@@ -37,7 +37,7 @@ metadata:
     purpose: service-demo  
 spec:
   selector:
-    purpose: deployment -demo
+    purpose: deployment-demo
     project: roboshop
     app: nginx
   ports:
