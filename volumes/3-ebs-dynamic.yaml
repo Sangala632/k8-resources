@@ -32,3 +32,21 @@ spec:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-dynamic
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    purpose: ebs-dynamic-demo
+    project: roboshop
+spec:
+  type: LoadBalancer
+  selector:
+    purpose: ebs-dynamic-demo
+    project: roboshop
+  ports:
+    - protocol: TCP
+      port: 80 #srevice port
+      targetPort: 80 # container port
